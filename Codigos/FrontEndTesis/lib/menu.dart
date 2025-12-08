@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/menu': (context) => BeTrendHomePage(),
         '/profile': (context) => UserProfilePage(),
         '/music1': (context) => MusicPage(),
-        '/logout': (context) => MainApp(),
+        '/logout': (context) => LogoutScreen()
       },
     );
   }
@@ -106,7 +106,7 @@ class BeTrendHomePage extends StatelessWidget {
             TextButton(
               onPressed: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => MainApp()));
+                    context, MaterialPageRoute(builder: (context) => LogoutScreen()));
               },
               child: Text(
                 'Log out',

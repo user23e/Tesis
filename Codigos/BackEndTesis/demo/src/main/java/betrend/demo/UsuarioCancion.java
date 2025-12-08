@@ -3,29 +3,29 @@ import java.io.Serializable;
 
 public class UsuarioCancion implements Serializable {
     private String nombre;
-    private double songDurationMs;
-    private double acousticness;
-    private double danceability;
-    private double energy;
-    private double instrumentalness;
-    private double liveness;
-    private double loudness;
-    private double audioMode;
-    private double speechiness;
-    private double tempo;
-    private double audioValence;
-    private double timeSignature1;
-    private double key1;
+    private int songDurationMs;
+    private float acousticness;
+    private float danceability;
+    private float energy;
+    private float instrumentalness;
+    private float liveness;
+    private float loudness;
+    private boolean audioMode;
+    private float speechiness;
+    private float tempo;
+    private float audioValence;
+    private boolean timeSignature1;
+    private boolean key1;
 
     // Constructor predeterminado.
     public UsuarioCancion() throws Exception {
-        this("Hi", 0.0, -0.5, 0.7, 0.8, 0.0, 0.2, 0.5, 0.7, 0.1, 0.0, 0.6, -0.05, -0.3);
+        this("Hi", 210349, 0.0101f, 0.484f, 0.748f, 0.000239f, 0.242f, -5.049f, true, 0.0491f, 100.568f, 0.654f, false, false);
     }
 
     // Constructor parametrizado.
-    public UsuarioCancion(String no, double sd, double ac, double da, double en, double in, 
-                          double li, double lo, double am, double sp, double te, double av,
-                          double ts, double k) throws Exception {
+    public UsuarioCancion(String no, int sd, float ac, float da, float en, float in, 
+                          float li, float lo, boolean am, float sp, float te, float av,
+                          boolean ts, boolean k) throws Exception {
         setNombre(no);
         setSongDurationMs(sd);
         setAcousticness(ac);
@@ -51,55 +51,55 @@ public class UsuarioCancion implements Serializable {
         }
     }
 
-    public void setSongDurationMs(double sd) {
+    public void setSongDurationMs(int sd) {
         songDurationMs = sd;
     }
 
-    public void setAcousticness(double ac) {
+    public void setAcousticness(float ac) {
         acousticness = ac;
     }
 
-    public void setDanceability(double da) {
+    public void setDanceability(float da) {
         danceability = da;
     }
 
-    public void setEnergy(double en) {
+    public void setEnergy(float en) {
         energy = en;
     }
 
-    public void setInstrumentalness(double in) {
+    public void setInstrumentalness(float in) {
         instrumentalness = in;
     }
 
-    public void setLiveness(double li) {
+    public void setLiveness(float li) {
         liveness = li;
     }
 
-    public void setLoudness(double lo) {
+    public void setLoudness(float lo) {
         loudness = lo;
     }
 
-    public void setAudioMode(double am) {
+    public void setAudioMode(boolean am) {
         audioMode = am;
     }
 
-    public void setSpeechiness(double sp) {
+    public void setSpeechiness(float sp) {
         speechiness = sp;
     }
 
-    public void setTempo(double te) {
+    public void setTempo(float te) {
         tempo = te;
     }
 
-    public void setAudioValence(double av) {
+    public void setAudioValence(float av) {
         audioValence = av;
     }
 
-    public void setTimeSignature1(double ts) {
+    public void setTimeSignature1(boolean ts) {
         timeSignature1 = ts;
     }
 
-    public void setKey1(double k) {
+    public void setKey1(boolean k) {
         key1 = k;
     }
 
@@ -108,65 +108,65 @@ public class UsuarioCancion implements Serializable {
         return nombre;
     }
 
-    public double getSongDurationMs() {
+    public int getSongDurationMs() {
         return songDurationMs;
     }
 
-    public double getAcousticness() {
+    public float getAcousticness() {
         return acousticness;
     }
 
-    public double getDanceability() {
+    public float getDanceability() {
         return danceability;
     }
 
-    public double getEnergy() {
+    public float getEnergy() {
         return energy;
     }
 
-    public double getInstrumentalness() {
+    public float getInstrumentalness() {
         return instrumentalness;
     }
 
-    public double getLiveness() {
+    public float getLiveness() {
         return liveness;
     }
 
-    public double getLoudness() {
+    public float getLoudness() {
         return loudness;
     }
 
-    public double getAudioMode() {
+    public boolean getAudioMode() {
         return audioMode;
     }
 
-    public double getSpeechiness() {
+    public float getSpeechiness() {
         return speechiness;
     }
 
-    public double getTempo() {
+    public float getTempo() {
         return tempo;
     }
 
-    public double getAudioValence() {
+    public float getAudioValence() {
         return audioValence;
     }
 
-    public double getTimeSignature1() {
+    public boolean getTimeSignature1() {
         return timeSignature1;
     }
 
-    public double getKey1() {
+    public boolean getKey1() {
         return key1;
     }
 
     // Método toString:
     @Override
     public String toString() {
-        return String.format("[ %s, Duration: %.4f, Acousticness: %.4f, Danceability: %.4f, " +
-                           "Energy: %.4f, Instrumentalness: %.4f, Liveness: %.4f, " +
-                           "Loudness: %.4f, AudioMode: %.4f, Speechiness: %.4f, " +
-                           "Tempo: %.4f, Valence: %.4f, TimeSignature: %.4f, Key: %.4f ]",
+        return String.format("[ %s, Duration: %d ms, Acousticness: %.4f, Danceability: %.4f, " +
+                           "Energy: %.4f, Instrumentalness: %.6f, Liveness: %.4f, " +
+                           "Loudness: %.3f dB, AudioMode: %b, Speechiness: %.4f, " +
+                           "Tempo: %.3f BPM, Valence: %.4f, TimeSignature: %b, Key: %b ]",
                            getNombre(), getSongDurationMs(), getAcousticness(), getDanceability(),
                            getEnergy(), getInstrumentalness(), getLiveness(), getLoudness(),
                            getAudioMode(), getSpeechiness(), getTempo(), getAudioValence(),

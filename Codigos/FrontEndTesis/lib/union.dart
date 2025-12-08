@@ -19,7 +19,7 @@ String getBaseUrl() {
     // Para navegadores web (Edge, Chrome, etc.)
     return 'http://localhost:8080';
   } else if (Platform.isAndroid) {
-    // Para emulador Android: 10.0.2.2 apunta a localhost de tu máquina
+    // Para emulador Android: 10.0.2.2 apunta a localhost de la máquina
     return 'http://10.0.2.2:8080';
   } else if (Platform.isIOS) {
     // Para simulador iOS: localhost funciona

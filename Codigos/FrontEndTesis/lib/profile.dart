@@ -107,7 +107,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                     ),
                     SizedBox(height: 8.0),
                     Container(
-                      width: 400,
+                      width: double.infinity,
                       padding: EdgeInsets.all(12.0),
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
@@ -130,7 +130,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                     ),
                     SizedBox(height: 8.0),
                     Container(
-                      width: 400,
+                      width: double.infinity,
                       padding: EdgeInsets.all(12.0),
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
@@ -157,7 +157,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           return SongListTile(
                             songName: song['songName']?.toString() ?? '',
                             percentage: song['trendPercentage'] ?? 0,
-                            fontSize: 18.0,
+                            fontSize: 16.0,
                           );
                         }).toList() ??
                         [],
@@ -180,7 +180,7 @@ class SongListTile extends StatelessWidget {
   SongListTile({
     required this.songName,
     required this.percentage,
-    this.fontSize = 18.0,
+    this.fontSize = 16.0,
   });
 
   Future<void> onSongTap(BuildContext context) async {
@@ -213,7 +213,7 @@ class SongListTile extends StatelessWidget {
         child: Row(
           children: [
             Expanded(
-              flex: 3,
+              flex: 5,
               child: Text(
                 songName,
                 style: TextStyle(
@@ -224,33 +224,40 @@ class SongListTile extends StatelessWidget {
                 maxLines: 1,
               ),
             ),
-            SizedBox(width: 10),
+            SizedBox(width: 8),
             Expanded(
-              flex: 2,
+              flex: 4, 
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisSize: MainAxisSize.min, 
                 children: [
-                  Container(
-                    width: 80,
-                    height: 15,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF4DB6AC).withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
-                    child: FractionallySizedBox(
-                      alignment: Alignment.centerLeft,
-                      widthFactor: (percentValue / 100).clamp(0.0, 1.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Color(0xFF4DB6AC),
-                          borderRadius: BorderRadius.circular(4.0),
+                  Flexible(
+                    child: Container(
+                      constraints: BoxConstraints(
+                        maxWidth: 70, 
+                        minWidth: 50,
+                      ),
+                      height: 15,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF4DB6AC).withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                      child: FractionallySizedBox(
+                        alignment: Alignment.centerLeft,
+                        widthFactor: (percentValue / 100).clamp(0.0, 1.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Color(0xFF4DB6AC),
+                            borderRadius: BorderRadius.circular(4.0),
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(width: 8.0),
-                  SizedBox(
-                    width: 45,
+                  SizedBox(width: 6.0), 
+                  Container( 
+                    width: 42,
+                    alignment: Alignment.centerRight,
                     child: Text(
                       '$percentValue%',
                       style: TextStyle(

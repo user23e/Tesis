@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'union.dart';
 import 'signup.dart';
 import 'menu.dart';
+import 'music1.dart'; 
+import 'music2.dart';
+import 'profile.dart';
+import 'logout.dart';
 
 void main() {
   runApp(MyApp()); // Interfaz de inicio de sesión.
@@ -16,6 +20,14 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => LoginScreen(), // Ruta para la pantalla de inicio de sesión
         '/menu': (context) => BeTrendHomePage(), // Ruta para la pantalla de menú
+        '/profile': (context) => UserProfilePage(),    // Perfil
+        
+        // Rutas de Música
+        '/music1': (context) => MusicPage(),            // Subir/Buscar canción
+        '/music2': (context) => MusicPage2(),           // Resultado de la canción
+        
+        // Ruta de Logout
+        '/logout': (context) => LogoutScreen(),
       },
     );
   }
@@ -33,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView( // Encapsula todo en un ListView
+      body: ListView(
         children: [
           Center(
             child: Column(
@@ -90,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: ElevatedButton(
                     onPressed: () async {//Se verifica que el usuario esté dentro de la base de datos.
                       bool loggedIn = await getSignIn(email, password);
-                      if (loggedIn == true) {//Si existe, se muestra la interfaz menu
+                      if (loggedIn == true) {//Si existe, se muestra la interfaz de menu
                         Navigator.push(context, MaterialPageRoute(builder: (context) => BeTrendHomePage()));
                       } else {
                         showDialog(

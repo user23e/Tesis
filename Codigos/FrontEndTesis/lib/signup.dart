@@ -78,9 +78,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        elevation: 0, // Elimina la sombra del AppBar
+        elevation: 0,
       ),
-      body: ListView( // Encapsula todo en un ListView
+      body: ListView(
         children: [
           Center(
             child: Column(
@@ -91,8 +91,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   padding: const EdgeInsets.all(4.0),
                   child: Image.asset(
                     'assets/Logo.jpeg',
-                    width: 300, // Ajusta el ancho de la imagen
-                    height: 300, // Ajusta la altura de la imagen
+                    width: 300,
+                    height: 300,
                   ),
                 ),
                 Padding(
@@ -211,7 +211,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             ),
                             Flexible(
                               child: Container(
-                                width: 250, // Ancho del texto
+                                width: 250,
                                 child: Text(
                                   'I agree to the Terms of Services and Privacy Policy',
                                   style: TextStyle(
@@ -238,7 +238,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.purple[900],
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(0), // Vértices cuadrados
+                              borderRadius: BorderRadius.circular(0),
                             ),
                           ),
                         ),
