@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 
+// ============================================================================
+// LOGOUT.DART - PANTALLA DE CIERRE DE SESIÓN
+// ============================================================================
+// Pantalla transitoria que muestra una imagen de despedida durante 3 segundos
+// antes de redirigir automáticamente al usuario a la pantalla de login,
+// limpiando el stack de navegación para evitar volver atrás con el botón back.
+// ============================================================================
+
 class LogoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

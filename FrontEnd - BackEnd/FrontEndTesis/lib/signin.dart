@@ -7,6 +7,14 @@ import 'music2.dart';
 import 'profile.dart';
 import 'logout.dart';
 
+// ============================================================================
+// SIGNIN.DART - PANTALLA DE INICIO DE SESIÓN
+// ============================================================================
+// Interfaz de autenticación donde los usuarios ingresan email y contraseña.
+// Valida las credenciales contra el backend y redirige al menú principal
+// si el login es exitoso. También permite navegar a la pantalla de registro.
+// ============================================================================
+
 void main() {
   runApp(MyApp()); // Interfaz de inicio de sesión.
 }

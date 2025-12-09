@@ -3,6 +3,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+// ============================================================================
+// DATABASECONNECTOR.JAVA - GESTOR DE CONEXIÓN A LA BASE DE DATOS
+// ============================================================================
+// Clase Singleton que gestiona la conexión a la base de datos MySQL.
+// Establece y mantiene la conexión con la BD 'tesis1' en localhost:3306.
+// Utiliza el patrón Singleton para garantizar una única instancia de conexión
+// y evitar múltiples conexiones innecesarias a la base de datos.
+// ============================================================================
 
 public class DatabaseConnector {
     private static DatabaseConnector conexion;

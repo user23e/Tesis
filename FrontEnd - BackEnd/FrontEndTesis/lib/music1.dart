@@ -4,6 +4,14 @@ import 'menu.dart';
 import 'union.dart';
 import 'music2.dart';
 
+// ============================================================================
+// MUSIC1.DART - PANTALLA DE BÚSQUEDA/SUBIDA DE CANCIONES
+// ============================================================================
+// Interfaz donde los usuarios ingresan el nombre de una canción para análisis.
+// Valida que la canción exista en el backend y redirige a Music2 para mostrar
+// el análisis completo con el porcentaje de tendencia y características musicales.
+// ============================================================================
+
 void main() {
   runApp(MyApp());
 }

@@ -11,6 +11,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// ============================================================================
+// USUARIO.JAVA - MODELO Y LÓGICA DE NEGOCIO DE USUARIOS
+// ============================================================================
+// Clase que representa un usuario de BeTrend y encapsula toda la lógica
+// relacionada con autenticación, registro, búsqueda de canciones y perfil.
+// Interactúa con la base de datos MySQL a través de DatabaseConnector para
+// realizar operaciones CRUD y consultas de análisis musical.
+// Clase importante porque maneja el algoritmo estadístico propuesto.
+// ============================================================================
+
 public class Usuario implements Serializable {
     private String nombre;
     private String apellido;

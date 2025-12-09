@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 
+// ============================================================================
+// USUARIO_PROVIDER.DART - GESTIÓN DE ESTADO GLOBAL
+// ============================================================================
+// Providers que mantienen el estado global de la sesión del usuario.
+// UsuarioProvider: almacena el ID del usuario logueado durante toda la sesión.
+// CancionProvider: guarda el nombre de la canción seleccionada para análisis.
+// Usa ChangeNotifier para notificar cambios a los widgets que escuchan.
+// ============================================================================
+
 class UsuarioProvider with ChangeNotifier{
   int _userId = 0; // Variable global para almacenar el ID de usuario
 

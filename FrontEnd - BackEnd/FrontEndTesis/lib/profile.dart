@@ -3,6 +3,14 @@ import 'union.dart';
 import 'music2.dart';
 import 'menu.dart';
 
+// ============================================================================
+// PROFILE.DART - PANTALLA DE PERFIL DE USUARIO
+// ============================================================================
+// Muestra la información del usuario (nombre, cuenta de Spotify) y el historial
+// de canciones analizadas con sus porcentajes de tendencia. Permite hacer clic
+// en cualquier canción para ver sus detalles completos en la pantalla Music2.
+// ============================================================================
+
 void main() {
   runApp(MyApp());
 }

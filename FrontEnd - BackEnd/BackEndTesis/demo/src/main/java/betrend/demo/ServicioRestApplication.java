@@ -6,6 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+// ============================================================================
+// SERVICIORESTAPPLICATION.JAVA - CONTROLADOR REST DEL BACKEND
+// ============================================================================
+// Controlador Spring Boot que expone los endpoints REST para la app Flutter.
+// Endpoints: /signIn (login), /signUp (registro), /music1 (análisis canción),
+// /profile (datos usuario). Procesa peticiones GET y devuelve JSON.
+// @CrossOrigin permite peticiones desde el frontend Flutter.
+// ============================================================================
+
 @RestController
 public class ServicioRestApplication {
 

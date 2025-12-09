@@ -3,6 +3,14 @@ import 'profile.dart';
 import 'music1.dart';
 import 'logout.dart';
 
+// ============================================================================
+// MENU.DART - PANTALLA DEL MENÚ PRINCIPAL
+// ============================================================================
+// Hub central de la aplicación después del login exitoso.
+// Permite navegar al perfil de usuario, subir canciones para análisis,
+// y cerrar sesión. Muestra el logo de BeTrend como elemento visual principal.
+// ============================================================================
+
 void main() {
   runApp(MyApp());
 }

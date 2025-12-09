@@ -3,6 +3,14 @@ import 'union.dart';
 import 'profile.dart';
 import 'menu.dart';
 
+// ============================================================================
+// MUSIC2.DART - PANTALLA DE RESULTADOS Y ANÁLISIS DE CANCIONES
+// ============================================================================
+// Muestra el análisis completo de una canción: porcentaje de tendencia (con
+// sistema de estrellas), y características musicales detalladas como danceability,
+// energy, tempo, etc. Los datos se obtienen del backend mediante getMusic2().
+// ============================================================================
+
 void main() {
   runApp(MyApp());
 }

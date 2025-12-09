@@ -5,6 +5,15 @@ import 'package:provider/provider.dart';
 import 'usuario_provider.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+// ============================================================================
+// UNION.DART - CAPA DE COMUNICACIÓN CON EL BACKEND (API SERVICE)
+// ============================================================================
+// Maneja todas las peticiones HTTP al servidor Spring Boot.
+// Detecta la plataforma (web/Android/iOS) y ajusta la URL base automáticamente.
+// Funciones: login, registro, búsqueda de canciones, obtención de perfil.
+// Usa 10.0.2.2:8080 para emuladores Android (apunta al localhost del host).
+// ============================================================================
+
 Future<void> main(List<String> arguments) async {
         ChangeNotifierProvider(create: (_) => UsuarioProvider());
         ChangeNotifierProvider(create: (_) => CancionProvider());

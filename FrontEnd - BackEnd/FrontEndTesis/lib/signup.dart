@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'union.dart';
 import 'menu.dart';
 
+// ============================================================================
+// SIGNUP.DART - PANTALLA DE REGISTRO DE NUEVOS USUARIOS
+// ============================================================================
+// Formulario para crear una nueva cuenta de usuario en BeTrend.
+// Captura información personal (nombre, email, país, cuenta de Spotify),
+// valida que se acepten los términos de servicio y crea el usuario en el backend.
+// ============================================================================
+
 void main() {
   runApp(MyApp()); //Interfaz para crear una cuenta.
 }

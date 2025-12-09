@@ -1,6 +1,15 @@
 package betrend.demo;
 import java.io.Serializable;
 
+// ============================================================================
+// USUARIOCANCION.JAVA - MODELO DE DATOS DE CARACTERÍSTICAS MUSICALES
+// ============================================================================
+// Clase que encapsula todas las características musicales de una canción
+// obtenidas de Spotify (danceability, energy, tempo, acousticness, etc.).
+// Utilizada para almacenar y transferir datos de análisis musical entre
+// la base de datos, el backend y el frontend. Implementa Serializable.
+// ============================================================================
+
 public class UsuarioCancion implements Serializable {
     private String nombre;
     private int songDurationMs;
