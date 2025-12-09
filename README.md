@@ -265,10 +265,21 @@ Ingeniería en Ciencias de la Computación - USFQ
 
 ## Referencias
 
-1. Kim, J. (2021). "Music Popularity Prediction Through Data Analysis"
-2. Jung & Mayer (2024). "Beyond Beats: A Recipe to Song Popularity?"
-3. Sardana, V. (2024). "Machine Learning Models for Song Popularity"
-4. Jiang, S. (2025). "Predicting Music Popularity Using Spotify Data"
+[1] J. Kim, "Music Popularity Prediction Through Data Analysis of Music's Characteristics," Int. J. Sci. Technol. Soc., vol. 9, no. 5, pp. 239-244, Oct. 2021, doi: 10.11648/j.ijsts.20210905.16.
+
+[2] N. S. Jung and F. Mayer, "Beyond Beats: A Recipe to Song Popularity? A Machine Learning Approach," arXiv:2403.12079 [cs. LG], Mar. 2024, doi: 10.48550/arXiv.2403.12079.
+
+[3] V. Sardana, "Veritas AI: Tuning into Trends: Machine Learning Models for Song Popularity Prediction on Spotify," NHSJS, Apr. 2024. [Online]. Available: https://nhsjs.com/wp-content/uploads/2024/04/Veritas-AI-Tuning-into-Trends-Machine-Learning-Models-for-Song-Popularity-Prediction-on-Spotify.pdf
+
+[4] S. Jiang, "Predicting Music Popularity: A Machine Learning Approach Using Spotify Data," in Proc. 1st Int. Conf. Modern Logistics and Supply Chain Manag. (MLSCM 2024), 2025, pp. 324-328, doi: 10.5220/0013330000004558.
+
+[5] Scikit-learn, "1.13. Feature selection," Scikit-learn.org. Accessed Oct. 23, 2025. [Online]. Available: https://scikit-learn.org/stable/modules/feature_selection.html
+
+[6] SciPy, "scipy.stats.wilcoxon — SciPy documentation," docs.scipy.org. Accessed Oct. 23, 2025. [Online]. Available: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.wilcoxon.html
+
+[7] Scikit-learn, "sklearn.model_selection.learning_curve — scikit-learn documentation," Scikit-learn.org. Accessed Oct. 23, 2025. [Online]. Available: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.learning_curve.html
+
+[8] Y. Hassan, "Song Popularity Dataset," Kaggle, 2023. [Online]. Available: https://www.kaggle.com/datasets/yasserh/song-popularity-dataset
 
 ---
 
